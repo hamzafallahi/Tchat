@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_background"
+    android:padding="10dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+    <!-- Checkbox for task completion -->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_checkbox"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:buttonTint="@color/my_primary"/>
+
+    <!-- Task Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/task_checkbox"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/task_title"/>
+
+    <!-- Pin Button -->
+    <ImageButton
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/icon_pin"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="@color/my_primary"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/pin_task_btn"
+        android:padding="4dp"/>
+
+    <!-- Delete Button -->
+    <ImageButton
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/icon_delete"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="@color/red"
+        android:layout_toStartOf="@id/pin_task_btn"
+        android:layout_centerVertical="true"
+        android:id="@+id/delete_task_btn"
+        android:padding="4dp"/>
+</RelativeLayout>

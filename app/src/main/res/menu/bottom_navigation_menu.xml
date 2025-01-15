@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="chats"
+        android:icon="@drawable/baseline_chat_24"
+        android:id="@+id/menu_chat"
+        />
+
+    <item android:title="Profils"
+        android:icon="@drawable/person_icon"
+        android:id="@+id/menu_profile"
+        />
+    <item android:title="Task Manager"
+        android:icon="@drawable/task_icon"
+        android:id="@+id/menu_task_manager"/>
+
+
+</menu>
